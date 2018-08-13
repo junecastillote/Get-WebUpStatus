@@ -68,7 +68,7 @@ param (
     [Parameter(Mandatory = $True, ValueFromPipeline = $True)]
     [string[]]$Sites,
     [Parameter(Mandatory = $false, ParameterSetName = "SendEmail")]
-	[switch]$SendEmail,
+    [switch]$SendEmail,
     [Parameter(Mandatory = $True, ParameterSetName = "SendEmail")]
     [string]$MailTo,
     [Parameter(Mandatory = $True, ParameterSetName = "SendEmail")]
@@ -77,8 +77,8 @@ param (
     [string]$MailSubject = "Site Up State as of {0}" -f (Get-Date -f dd-MMM-yyyy-HH:mm),
     [Parameter(Mandatory = $True, ParameterSetName = "SendEmail")]
     [string]$MailServer,
-	[Parameter(Mandatory = $false)]
-	[switch]$AlertsOnly
+    [Parameter(Mandatory = $false)]
+    [switch]$AlertsOnly
 )
 #endregion
 
