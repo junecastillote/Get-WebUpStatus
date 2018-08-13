@@ -7,6 +7,9 @@
 	 Filename:     	Get-WebUpStatus.ps1
 	===========================================================================
 
+	.LINK
+		https://www.lazyexchangeadmin.com/
+		
 	.SYNOPSIS
 		Use Get-WebUpStatus.ps1 to programmatically check the availability status of Sharepoint Sites or any WebSites.
 
@@ -122,11 +125,13 @@ foreach ($result in $results)
 {
 	if ($result.StatusDescription -ne 'OK')
 	{
-		$mail_body += '<tr><td class = "bad"></td><td>' + $result.Site + '</td><td>' + $result.StatusDescription + '</td><td>' + $result.StatusCode + '</td></tr>'
+		$sitestring = $result.Site.Replace(" ", "%20")
+		$mail_body += '<tr><td class = "bad"></td><td>' + $sitestring + '</td><td>' + $result.StatusDescription + '</td><td>' + $result.StatusCode + '</td></tr>'
 	}
 	elseif ($result.StatusDescription -eq 'OK')
 	{
-		$mail_body += '<tr><td class = "good"></td><td>' + $result.Site + '</td><td>' + $result.StatusDescription + '</td><td>' + $result.StatusCode + '</td></tr>'
+		$sitestring = $result.Site.Replace(" ", "%20")
+		$mail_body += '<tr><td class = "good"></td><td>' + $sitestring + '</td><td>' + $result.StatusDescription + '</td><td>' + $result.StatusCode + '</td></tr>'
 	}
 }
 $mail_body += "</table></html>"
