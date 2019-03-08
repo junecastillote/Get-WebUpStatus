@@ -8,7 +8,8 @@
 	===========================================================================
 
 	.LINK
-		https://www.lazyexchangeadmin.com/
+		https://www.lazyexchangeadmin.com/2018/08/checking-website-up-status-using.html
+		https://github.com/junecastillote/Get-WebUpStatus
 		
 	.SYNOPSIS
 		Use Get-WebUpStatus.ps1 to programmatically check the availability status of Sharepoint Sites or any WebSites.
@@ -167,7 +168,7 @@ $html += 'Config File: ' + $configFile + '<br />'
 $html += 'Sites List File: ' + $sitesListFile + '<br />'
 $html += 'Recipients: ' + ($mailTO -join ",") + '<br /><br />'
 $html += '</p><p>'
-$html += '<a href="https://www.lazyexchangeadmin.com/">Get-WebUpStatus.ps1 v.'+$scriptVersion+'</a></p>'
+$html += '<a href="https://www.lazyexchangeadmin.com/2018/08/checking-website-up-status-using.html/">Get-WebUpStatus.ps1 v.'+$scriptVersion+'</a></p>'
 $html += "</table></html>"
 $mailSubject = "Web Up Status Report - $today"
 
