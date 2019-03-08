@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<parameters
+    enableDebug="1"
+    SendEmail="1"
+    AlertsOnly="1"
+    mailFrom="web-monitor@lazyexchangeadmin.com"
+    mailTo="reports@lazyexchangeadmin.com"    
+    mailServerName="localhost"
+    mailServerPort="25"
+    sitesListFile="C:\Get-WebUpStatus\sitesList.txt"
+/>

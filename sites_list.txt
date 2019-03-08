@@ -1,4 +1,0 @@
-http://www.google.com
-http://xyz.local
-http://www.gmail.com
-https://www.facebook.com
