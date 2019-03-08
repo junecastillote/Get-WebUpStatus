@@ -1,10 +1,11 @@
 <#	
 	.NOTES
 	===========================================================================
-	 Created on:   	8-Aug-2015 9:10 AM
-	 Created by:   	Tito D. Castillote Jr.
+	 Created on:   	8-Aug-2015
+	 Created by:   	June Castillote
 					june.castillote@gmail.com
 	 Filename:     	Get-WebUpStatus.ps1
+	 Version:		1.2 (9-Mar-2019)
 	===========================================================================
 
 	.LINK
